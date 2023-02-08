@@ -5,5 +5,7 @@ def fizzbuzz(number)
     return "fizz"
   elsif number % 5 == 0
     return "buzz"
+  else   
+    number.to_s
   end
 end
