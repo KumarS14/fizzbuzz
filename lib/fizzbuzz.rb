@@ -1,4 +1,5 @@
 def fizzbuzz(number)
+  if !number.is_a? Integer then return 'not working' end
   if number % 3 == 0 && number % 5 == 0
     return "fizzbuzz"
   elsif number % 3 == 0
