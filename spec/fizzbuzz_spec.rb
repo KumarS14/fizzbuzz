@@ -1,5 +1,8 @@
 require './lib/fizzbuzz'
 describe 'fizzbuzz' do
+  it 'returns nil if number is not an integer' do
+    expect(fizzbuzz('hello')).to eq 'not working'
+  end
   it 'returns "fizzbuzz" when passed multiple of 3 and 5' do
     expect(fizzbuzz(15)).to eq 'fizzbuzz'
   end
